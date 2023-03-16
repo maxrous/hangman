@@ -6,13 +6,13 @@ class Hangman:
         self.possible_words = ['becode', 'learning', 'mathematics', 'sessions']
         self.word_to_find = random.choice(self.possible_words)
         self.lives = 5
-        self.correctly_guessed_letters = list('_' * len(self.word_to_find))
+        self.correctly_guessed_letters = '_' * len(self.word_to_find)
         self.wrongly_guessed_letters = []
         self.turn_count = 0
         self.error_count = 0
 
     def play(self):
-        letter = str(input('Enter a letter'))
+        letter = input('Enter a letter')
         if len(letter) == 1 and letter.isalpha():
             if letter in self.word_to_find:
                 self.turn_count += 1
@@ -52,5 +52,5 @@ class Hangman:
   
     
 
-Hangman().start_game()
+
 
