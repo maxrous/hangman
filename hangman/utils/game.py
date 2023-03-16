@@ -26,7 +26,7 @@ class Hangman:
                 self.lives -= 1
                 print('That letter is not in the word')
         else:
-            print('Please enter a letter')
+            print('Please enter a letter : ')
 
 
     def start_game(self):
